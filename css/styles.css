@@ -1,0 +1,127 @@
+/**
+ * Styles for Offline QR Code Reader
+ */
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #333;
+    --background-color: #ffffff;
+    --text-color: #333;
+    --border-color: #ddd;
+    --error-color: #f44336;
+    --success-color: #4CAF50;
+    --border-radius: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: var(--secondary-color);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#video-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 20px;
+    border: 3px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+#qr-video {
+    width: 100%;
+    height: auto;
+}
+
+#qr-canvas {
+    display: none;
+}
+
+#result {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: #f9f9f9;
+    min-height: 50px;
+    word-break: break-all;
+}
+
+.button {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#error-message {
+    color: var(--error-color);
+    margin: 10px 0;
+}
+
+.history-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f1f1f1;
+    border-radius: var(--border-radius);
+    text-align: left;
+}
+
+.history-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.history-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    #video-container {
+        max-width: 100%;
+    }
+    
+    .button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}

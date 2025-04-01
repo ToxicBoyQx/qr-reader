@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <rect width="192" height="192" fill="#4CAF50" rx="16" ry="16"/>
+  <g fill="white">
+    <!-- QR Code-like pattern -->
+    <rect x="40" y="40" width="112" height="112" fill="none" stroke="white" stroke-width="8"/>
+    <rect x="56" y="56" width="24" height="24"/>
+    <rect x="112" y="56" width="24" height="24"/>
+    <rect x="56" y="112" width="24" height="24"/>
+    <rect x="96" y="96" width="40" height="8"/>
+    <rect x="96" y="112" width="8" height="24"/>
+    <rect x="112" y="112" width="24" height="8"/>
+    <rect x="128" y="128" width="8" height="8"/>
+    <!-- Camera lens symbol -->
+    <circle cx="96" cy="96" r="16" fill="none" stroke="white" stroke-width="6"/>
+    <circle cx="96" cy="96" r="6"/>
+  </g>
+</svg>
